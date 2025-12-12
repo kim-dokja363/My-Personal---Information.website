@@ -1,0 +1,134 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: #000814;
+    color: #e0faff;
+}
+
+.login-container {
+    width: 350px;
+    margin: 120px auto;
+    padding: 40px 30px;
+    background: #00121f;
+    border: 2px solid #00eaff;
+    box-shadow: 0 0 25px #00eaffaa, 0 0 50px #00eaff55;
+    border-radius: 15px;
+    text-align: center;
+    animation: glowIn 0.8s ease;
+}
+
+.login-container h2 {
+    margin-bottom: 15px;
+    color: #00f2ff;
+    text-shadow: 0 0 10px #00f2ffa0;
+}
+
+.login-container input {
+    width: 90%;
+    padding: 12px;
+    margin: 12px 0;
+    background: #000;
+    border: 2px solid #00ff80;
+    color: #aaffdd;
+    border-radius: 8px;
+    transition: 0.3s;
+    box-shadow: 0 0 10px #00ff8050;
+}
+
+.login-container input:focus {
+    border-color: #00eaff;
+    box-shadow: 0 0 10px #00eaff, 0 0 20px #00eaffaa;
+    outline: none;
+}
+
+.login-container button {
+    width: 95%;
+    padding: 12px;
+    background: #00ff80;
+    color: #001a0f;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 15px;
+    box-shadow: 0 0 15px #00ff80aa;
+}
+
+.login-container button:hover {
+    background: #00eaff;
+    color: #00131a;
+    box-shadow: 0 0 20px #00eaff, 0 0 40px #00eaffaa;
+}
+
+#error {
+    color: #ff4d6d;
+    margin-top: 10px;
+    font-weight: bold;
+    text-shadow: 0 0 10px #ff4d6d88;
+}
+
+.nav-bar ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    background: #00121f;
+    padding: 12px 0;
+    margin: 0;
+    border-bottom: 2px solid #00eaff;
+}
+
+.nav-bar li {
+    margin: 0 10px;
+}
+
+.nav-bar a, #logoutBtn {
+    color: #00eaff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 6px 12px;
+    border-radius: 6px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.nav-bar a:hover, #logoutBtn:hover {
+    color: #00ff80;
+    box-shadow: 0 0 10px #00ff80;
+}
+
+.section {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #000814;
+    border-radius: 15px;
+    border: 2px solid #00eaff;
+    box-shadow: 0 0 25px #00eaff55;
+}
+
+.project {
+    margin: 20px 0;
+}
+
+.project img {
+    max-width: 50%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 15px #00eaff55;
+}
+
+.project p {
+    margin-top: 10px;
+    color: #c9fff8;
+}
+
+@keyframes glowIn {
+    from { opacity: 0; transform: scale(0.95); }
+    to { opacity: 1; transform: scale(1); }
+}
+
+@keyframes glowUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
